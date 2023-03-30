@@ -22,6 +22,10 @@ button {
   background-color: #7fc48f;
 }
 
+button:hover {
+  background-color: #52a365;
+}
+
 .bold {
   font-weight: 700;
 }
