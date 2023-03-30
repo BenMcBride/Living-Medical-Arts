@@ -15,17 +15,27 @@ body
   justify-content: center
 p
   margin-bottom: 8px
+button a 
+  text-decoration: none
 button
+  box-sizing: border-box
   font-weight: 500
   padding: 5px 10px
-  background-color: $light-color
+  background-image: linear-gradient(120deg, #72b181 0%, $light-color 55%)
+  border-radius: 8px
 button:hover
-  background-color: #52a365
+  background-image: linear-gradient(120deg, #5c8f67 0%, #72b181 55%)
+  border-color: black
+  color: white
 .bold
   font-weight: 700
 .container-fluid
   margin: 0
   padding: 0
+.container-xxl
+  background-image: linear-gradient(to right, #ffffff, #dddddd)
+.container-xl
+  background-image: linear-gradient(to right, #ffffff, #dddddd)
 .side-note
   font-style: italic
   color: rgb(90, 90, 90)
@@ -63,7 +73,6 @@ button:hover
   position: relative
 .bg-img
   z-index: 0
-  opacity: 0.6
   position: absolute
   left: 0
   top: 0
@@ -71,6 +80,19 @@ button:hover
   height: auto
 .splash-cont
   position: relative
+  padding-bottom: 5px
+  width: fit-content
+.splash-box
+  padding: 5px 15px
+  position: relative
+  background-image: url(images/Blur3grn.png)
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100% 100%
+  width: fit-content
+#book
+  margin-left: 5px
+  padding: 5px 10px
 // about us
 .about-us p 
   font-size: 1.2rem
@@ -92,15 +114,19 @@ button:hover
 .testimonials
   text-align: center
 .gallery-cell
+  border: 2px solid buttonborder
   font-weight: 500
   height: 300px
   aspect-ratio: 1/1
   margin: 10px
   padding: 10px
-  background-color: $light-color
+  background-image: linear-gradient(120deg, #72b181 0%, $light-color 55%)
   color: $dark-color
   border-radius: 20px
   counter-increment: gallery-cell
+.gallery-cell:hover
+  background-image: linear-gradient(120deg, #5c8f67 0%, #72b181 55%)
+  color: whitesmoke
 .gallery-text
   height: 280px
   overflow-y: scroll
@@ -116,12 +142,10 @@ button:hover
 .gallery-text::-webkit-scrollbar-thumb:hover
   background: $dark-color
 
-@media screen and ( min-width: 766px )
-  .gallery-cell 
-    width: 25%
+
 // expertise and services
 .services-cont
-  margin-top: 30px
+  padding-top: 30px
 .services
   display: grid
   grid-template-columns: 1fr 1fr 1fr 1fr
@@ -155,10 +179,17 @@ button:hover
 // footer
 .footer
   display: flex
-  justify-content: space-around
+  justify-content: space-between
   width: 100%
+  min-height: 250px
   padding: 30px 160px
   background-color: #aeaeae
+.footer-left
+  position: absolute
+  left: 25%
+.footer-right
+  position: absolute
+  right: 25%
 
 @media screen and ( min-width: 2400px )
   .splash
@@ -168,7 +199,19 @@ button:hover
   .splash
     padding-bottom: 40%
     transition: 200ms ease-in-out
+  .footer-left
+    position: absolute
+    left: 20%
+  .footer-right
+    position: absolute
+    right: 20%
 @media screen and ( max-width: 1800px )
+  .footer-left
+    position: absolute
+    left: 10%
+  .footer-right
+    position: absolute
+    right: 10%
   .splash
     padding-bottom: 50%
     transition: 200ms ease-in-out
@@ -201,6 +244,9 @@ button:hover
   .splash
     padding-bottom: 40%
     transition: 200ms ease-in-out
+@media screen and ( min-width: 922px )
+  .gallery-cell 
+    width: 25%
 @media screen and (max-width: 749px)
   .splash
     padding-bottom: 30%
@@ -226,11 +272,13 @@ button:hover
   .dr-pic
     padding: 0
     margin: 0 auto
+    margin-bottom: 10px
     float: none
     transition: 200ms ease-in-out
   .murr-pic
     padding: 0
     margin: 0 auto
+    margin-bottom: 10px
     float: none
     transition: 200ms ease-in-out
   .footer
