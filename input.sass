@@ -33,9 +33,9 @@ button:hover
   margin: 0
   padding: 0
 .container-xxl
-  background-image: linear-gradient(to right, #ffffff, #dddddd)
+  background-image: linear-gradient(to right, #ffffff, #eeeeee)
 .container-xl
-  background-image: linear-gradient(to right, #ffffff, #dddddd)
+  background-image: linear-gradient(to right, #ffffff, #eeeeee)
 .side-note
   font-style: italic
   color: rgb(90, 90, 90)
@@ -120,12 +120,12 @@ button:hover
   aspect-ratio: 1/1
   margin: 10px
   padding: 10px
-  background-image: linear-gradient(120deg, #72b181 0%, $light-color 55%)
+  background-image: linear-gradient(120deg, #6fac7d 0%, $light-color 55%)
   color: $dark-color
   border-radius: 20px
   counter-increment: gallery-cell
 .gallery-cell:hover
-  background-image: linear-gradient(120deg, #5c8f67 0%, #72b181 55%)
+  background-image: linear-gradient(120deg, #507c59 0%, #63976f 55%)
   color: whitesmoke
 .gallery-text
   height: 280px
@@ -156,8 +156,28 @@ button:hover
   margin-bottom: 20px
   height: auto
   max-width: 100%
-
-
+  cursor: pointer
+.modal-header
+  background-image: linear-gradient(90deg, #eeeeee, #ffffff)
+.modal-body
+  background-image: linear-gradient(90deg, #ffffff, #eeeeee)
+  display: grid
+  grid-template-rows: 1fr 4fr
+  grid-template-columns: 1fr 2fr
+.modal-body p
+  grid-column-start: 1
+  grid-column-end: 3
+.modal-img
+  grid-row-start: 2
+  height: auto
+  width: 200px
+  float: left
+  size-adjust: scale-down
+.modal-body ul
+  grid-row-start: 2
+.modal-footer
+  background-image: linear-gradient(90deg, #eeeeee, #ffffff)
+  justify-content: center
 // contact us
 .contact-us h2
   text-align: center
