@@ -12,16 +12,16 @@
 </head>
 <body>
   <div class="navbar container-fluid">
-    <div class="logo"><img src="./images/logo.png" alt="Living Medical Arts Logo"></div>
+    <div class="logo"><a href="./index.html"><img src="./images/logo.png" alt="Living Medical Arts Logo"></a></div>
     <div class="nav-links">
-      <button>Home</button>
-      <button id="about-us-btn">About Us</button>
-      <button>Testimonials</button>
-      <button>Services</button>
-      <button id="contact-us-btn">Contact Us</button>
+      <button onClick="document.getElementById('home').scrollIntoView();">Home</button>
+      <button onClick="document.getElementById('about-us').scrollIntoView();" id="about-us-btn">About Us</button>
+      <button onClick="document.getElementById('testimonials').scrollIntoView();">Testimonials</button>
+      <button onClick="document.getElementById('services').scrollIntoView();">Services</button>
+      <button onClick="document.getElementById('contact-us').scrollIntoView();" id="contact-us-btn">Contact Us</button>
     </div>
   </div>
-  <div class="container-fluid home">
+  <div id="home" class="container-fluid home">
     <div class="splash bg-cont">
       <img class="bg-img" src="./images/SanJuan.jpeg" alt="beautiful picture of san juan island">
       <div class="splash-box">
@@ -34,7 +34,7 @@
       <button id="book" class="book splash-cont">Book your appointment today!</button>
     </div>
   </div>
-  <div class="container-xxl about-us">
+  <div id="about-us" class="container-xxl about-us">
     <h2>About Our Practice</h2>
     <div class="blurb about-1">
       <img class="about-pic dr-pic" src="./images/DR-Pic.jpg" alt="picture of dr gulla">
@@ -55,39 +55,35 @@
       <p class="side-note">Fun facts: Maria loves working with plants (she has 67 houseplants!). She loves dogs, cats, and is an aspiring novelist. We are so grateful to welcome her diverse skillsets and presence into our office! Maria is an INFJ-T, Enneagram 1 wing 2, with a Libra Sun, a Capricorn Moon, and a Leo Rising.</p>
     </div>
   </div>
-  <div class="container-xxl testimonials">
+  <div id="testimonials" class="container-xxl testimonials">
     <h2>Testimonials</h2>
     <div class="main-gallery js-flickity" 
     data-flickity-options='{"wrapAround": true, "autoPlay": true}'>
-      <div class="gallery-cell"><p class="gallery-text">“To Dr. Gulla, Living well Medical Arts. I would like to thank you personally for your excellent ways of nurturing body and mind. Your knowledge of the body and also your spiritual insight give you a unique healing way. Since I've stared with your practice, I've changed my diet and my attitude, and at 63 yrs, am feeling good. My last visit to you was unscheduled, but I was welcomed quickly and you went to work! I had chest pains I couldn”t account for. You took the precautions of a possible heart issue, and we went over that extensively. While I was there, you preformed some body work on muscular and skeletal possibilities, and prescribed herbal medicines to make the pain diminish. The tests bore no heart problems, and you followed up the results with the suggestion of some more adjustments, so I could regain 100% pain free mobility. You are a caring person as well as a practiced Dr. I'm lucky to have entered your caring team! Thank you kindly, Dr. Gulla, Keep up the good work!” - Friday Harbor WA, 2018</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla is a phenomenal naturopath who has saved my life. She is amazing. She truly cares for her patients on a medical and personal level. In 40 years of life, I've never encountered a practitioner who cares half as much as she does. She's knowledgeable, progressive, careful, kind, and can help you get to the root of your problem. I'm honored to be her patient, and I will not imagine what would have come of my life had I not been blessed by Dr. Gulla's presence in mine. I recommend Dr. Gulla to you without hesitation for all your healthcare needs. Start feeling better now.” - Houston TX, 2017</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“I've been seeing naturopathic doctors since my twenties. I'm nearly fifty now. What I have learned is that there are very few effective doctors. But Dr. Gulla is different. She is like a mad scientist who will stop at nothing until she discovers what is going on in the body. And I am a difficult case because I am so healthy that when things don't feel right, it can be very challenging to figure out what is going on with me. I have recently thought about moving out of state and one of my biggest considerations would be not having access to Dr. Gulla anymore. She is that good! I trust her with my life!” - Bothell, WA 2017</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla is an exceptional diagnostician. She will get the the root cause of your issues!” – Colorado, 2017</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Amazing! I had a wonderful experience and would highly recommend Dr. Gulla – Thank you so much!” - San Juan Islands, WA 2016</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla is a very knowledgable compassionate Doctor. Living Medical Arts help heal the whole body in a very loving way. Highly recommend! She as well as staff go above and beyond in care and professionalism. Very grateful” – San Juan Islands, WA 2016</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“After my recent move to Friday Harbor, I began inquiring about doctors on the island. After hearing excellent things about Dr. Gulla, I decided to give her a try. It’s been one of the best decisions I’ve made since arriving here. Dr. Gulla is, by far and away, the best doctor I have EVER had. In addition to being exceptionally caring, she is incredibly knowledgable of the human body. I feel so blessed to be in the hands of someone as competent and compassionate as Dr. Gulla. I cannot recommend her highly enough!” – San Juan Islands, WA 2016</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla’s practice is what health care should be. She has a sincere concern for each individual’s physical health and unlike mainstream medical care, she knows a healthy mind and a healthy diet are also essential to the body’s well being. When I first started with her I was overweight, unhealthy and lost as to why. After my blood tests returned she knew what was wrong and recommended a big course correction, which turned out to be the solution to years of frustrating, seemingly unsolvable symptoms. More than that, she took the time to explain everything to me so I could understand why change was needed which helped me stay on my new course. Also, unlike mainstream medicine, she continues with follow up appointments to make sure I’m doing my part and being good to myself. Later on, I told her that had I not met her, with all the stress I was going through and with minor heart concerns, I would have been dead and I mean it. She truly changed my life.” – San Juan Islands, WA 2015</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla is one of those doctors with the rare combination of excellent medical skills and knowledge, and an incredible bedside manner. I started seeing her 9 months ago for a mysterious chronic illness that I have been dealing with for 7 years, and working with her has been a huge relief. Thanks to her extensive experience with mysterious illnesses like mine, she has been able to offer me multiple treatment options and plans that none of the many other doctors I have seen were able to offer. Dr. Gulla breaks each treatment option down for me on a basic scientific level so that I can understand what is happening to my body and exactly how we are trying to repair it. She always spends as much time with me as it takes to address all of my concerns and answer my questions, and she considers all aspects of my experience to be important and valuable. She believes me when I talk about my many strange and varied symptoms, and has a wide-ranging toolbox of supplements, herbs, and simple suggestions to help me deal with what is happening to my body. Dr. Gulla demonstrates how much she truly cares about me and how committed she is to helping me improve my health at every appointment, and I am deeply grateful to have her as my doctor.” - A.S. Seattle, WA 2014</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“My name is Marc, and I’ve been a patient of Dr. Mandy Gulla’s for three years. During this time Dr. Gulla has almost singlehandedly restored my faith in a medical profession that had let me down for years. As a physician, Dr. Gulla is the whole package – knowledgeable, kind, caring, thoughtful, intelligent, and up to speed with the latest medical advancements. She offers more of her time than any doctor I’ve ever seen, so you’ll never feel as though you don’t have time to ask your important questions. Additionally, Dr. Gulla looks at the whole person…from the physical, to the mental, emotional, and spiritual. Regardless of what ails you, how can you ever expect to feel well if your head isn’t in the right place? Dr. Gulla addresses your physical complaints as well as your thoughts, feelings, and actions. I credit Dr. Gulla with saving and enhancing my quality of life. With many of our ailments, we search high and low for the best integrative doctors, open-minded to methods outside mainstream medicine. Dr. Gulla, simply put, is the very best you can do in this regard. I’d say Dr. Gulla goes the extra mile, but by now, she’s circled the globe with me. If you want a physician who truly cares about you and your well being, is flexible, open-minded, and willing to work with you to optimize your health, if you truly hope to establish a relationship with your doctor, Dr. Gulla isn’t a choice, she is THE choice. I recommend Dr. Gulla for all of your medical needs without hesitation.” - M.R. Tampa, FL 2013</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“I have been a patient of Dr. Gulla’s for a little over a year. I started seeing her as a result of being diagnosed with a chronic health condition. I was seeking a holistic approach. I have been more than thrilled with the level of care I have received as a patient. Dr. Gulla has gone above and beyond my expectations in finding a health care provider. She is competent, capable, kind, caring, supportive and incredibly knowledgeable. I don’t know of a medical topic that she has not thoroughly researched! Dr. Gulla has great follow up and follow through. She is timely in her care. She is wonderful to talk to about health concerns. She is trustworthy and respectful. Her demeanor makes me feel that she is genuine and desires for me to be healthy. I have recommended colleagues, family and friends to Dr. Gulla. She is amazing and any one under her care is in the best care.” - H.H. Bothell, WA 2013</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“To whom it may concern: Dr Gulla saw me about a year ago in 2012. I had a few years of intestinal issues and continued ongoing intestinal pain. She performed many tests fecal and blood tests. I was put on a one month protocol of various drugs to remove the parasites and worms I had contracted in Mexico. She continued to care for my health and visited me once in the hospital over the summer while my Appendix was removed. She has gone above and beyond in patient healthcare. She is very good at listening to your health issues and coming up with a protocol and health plan that is custom for each patient. We have continued to work on my health issues. Thank you so much Dr Gulla!” - S.S. Bothell, WA 2013</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla has been such a blessing to me on my journey to healing from Lyme Disease. To start, she ordered the appropriate tests to get the correct diagnosis following a false negative diagnosis from my primary care physician. Her naturally peaceful presence helped me to find peace after being so distraught knowing what lied ahead for me. Throughout this journey, she has been the one Practitioner out of many who has been able to explain everything in the greatest detail such as why and how my current treatment plans would or would not serve me such as herbs, natural foods, aromatherapy, Chinese medicine, antibiotics, and exercise. Her knowledge of all these subjects and her dedication to her patients is unsurpassed. When talking with her, I feel like I am getting care from my best friend or family member. You will truly feel her compassion. I am deeply touched by her sincerity and commitment to see me get well. I would highly recommend Dr. Gulla without reservation.” - J.K. Orlando, FL 2012</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“I love my new Naturopathic Doctor!!! Dr. Mandy Gulla at Living Medical Arts PLLC in Bothell, WA. If you are looking for a new doctor in the Seattle area, you would be a fool not to call and make an appointment with her.” - J.B. Bothell, WA 2012</p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Mandy Gulla is an amazing naturopath and has much to give to the world! I have never met someone more earnest, more caring and more authentic in her caring. She gives you all the time in the world. She works hard to help you to feel safe. She is gentle in her approach but do not let that fool you as she is very, very knowledgeable and skilled. She is very versed in different ways of helping you to heal, and will not stop until she figures out what is best for you. She is modest and softly spoken and would be a perfect fit for those that are vulnerable emotionally and health wise. When she worked in Orlando, she was very, very loved by the staff and patients and EVERYONE was very sad when she left. If you are looking for the kindest, warmest person to help you on your road to recovery then look no further, you have found her here!” - Janice Robinson, Orlando FL 2012 <a href="http://www.orlandoreflexology.com/">OrlandoReflexology</a></p></div>
-      <div class="gallery-cell"><p class="gallery-text">“Dr. Mandy Gulla is a healthcare professional who truly CARES about the health and well being of her patients. She listens attentively and monitors their progress. She treats her patients as valued individuals, tailoring their treatment plan to their specific symptoms, needs and diagnosis. In my case, she incorporated findings from standard medical practice with naturopathic medicine to arrive at the best treatment plan for me. The depth of her expertise coupled with her ability to analyze test data and symptoms have been invaluable on my road to recovery. Dr. Gulla’s dietary, lab and lifestyle recommendations have helped me immensely in coping with autoimmune disease, digestive issues and severe food allergies. My son referred me to Dr. Gulla. He has been her patient for 2 years. Currently he is the healthiest he’s been in 10 years, largely thanks to Dr. Gulla. Our entire family is extremely grateful to this gifted, caring doctor. We highly recommend her to anyone looking for excellent, naturopathic healthcare.” - S.R. Orlando, FL 2012</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“To Dr. Gulla, Living well Medical Arts. I would like to thank you personally for your excellent ways of nurturing body and mind. Your knowledge of the body and also your spiritual insight give you a unique healing way. Since I've stared with your practice, I've changed my diet and my attitude, and at 63 yrs, am feeling good. My last visit to you was unscheduled, but I was welcomed quickly and you went to work! I had chest pains I couldn”t account for. You took the precautions of a possible heart issue, and we went over that extensively. While I was there, you preformed some body work on muscular and skeletal possibilities, and prescribed herbal medicines to make the pain diminish. The tests bore no heart problems, and you followed up the results with the suggestion of some more adjustments, so I could regain 100% pain free mobility. You are a caring person as well as a practiced Dr. I'm lucky to have entered your caring team! Thank you kindly, Dr. Gulla, Keep up the good work!” <br> - Friday Harbor WA, 2018</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla is a phenomenal naturopath who has saved my life. She is amazing. She truly cares for her patients on a medical and personal level. In 40 years of life, I've never encountered a practitioner who cares half as much as she does. She's knowledgeable, progressive, careful, kind, and can help you get to the root of your problem. I'm honored to be her patient, and I will not imagine what would have come of my life had I not been blessed by Dr. Gulla's presence in mine. I recommend Dr. Gulla to you without hesitation for all your healthcare needs. Start feeling better now.” <br> - Houston TX, 2017</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“I've been seeing naturopathic doctors since my twenties. I'm nearly fifty now. What I have learned is that there are very few effective doctors. But Dr. Gulla is different. She is like a mad scientist who will stop at nothing until she discovers what is going on in the body. And I am a difficult case because I am so healthy that when things don't feel right, it can be very challenging to figure out what is going on with me. I have recently thought about moving out of state and one of my biggest considerations would be not having access to Dr. Gulla anymore. She is that good! I trust her with my life!” <br> - Bothell, WA 2017</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla is an exceptional diagnostician. She will get the the root cause of your issues!” <br> - Colorado, 2017</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Amazing! I had a wonderful experience and would highly recommend Dr. Gulla - Thank you so much!” <br> - San Juan Islands, WA 2016</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla is a very knowledgable compassionate Doctor. Living Medical Arts help heal the whole body in a very loving way. Highly recommend! She as well as staff go above and beyond in care and professionalism. Very grateful” <br> - San Juan Islands, WA 2016</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“After my recent move to Friday Harbor, I began inquiring about doctors on the island. After hearing excellent things about Dr. Gulla, I decided to give her a try. It's been one of the best decisions I've made since arriving here. Dr. Gulla is, by far and away, the best doctor I have EVER had. In addition to being exceptionally caring, she is incredibly knowledgable of the human body. I feel so blessed to be in the hands of someone as competent and compassionate as Dr. Gulla. I cannot recommend her highly enough!” <br> - San Juan Islands, WA 2016</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla's practice is what health care should be. She has a sincere concern for each individual's physical health and unlike mainstream medical care, she knows a healthy mind and a healthy diet are also essential to the body's well being. When I first started with her I was overweight, unhealthy and lost as to why. After my blood tests returned she knew what was wrong and recommended a big course correction, which turned out to be the solution to years of frustrating, seemingly unsolvable symptoms. More than that, she took the time to explain everything to me so I could understand why change was needed which helped me stay on my new course. Also, unlike mainstream medicine, she continues with follow up appointments to make sure I'm doing my part and being good to myself. Later on, I told her that had I not met her, with all the stress I was going through and with minor heart concerns, I would have been dead and I mean it. She truly changed my life.” <br> - San Juan Islands, WA 2015</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla is one of those doctors with the rare combination of excellent medical skills and knowledge, and an incredible bedside manner. I started seeing her 9 months ago for a mysterious chronic illness that I have been dealing with for 7 years, and working with her has been a huge relief. Thanks to her extensive experience with mysterious illnesses like mine, she has been able to offer me multiple treatment options and plans that none of the many other doctors I have seen were able to offer. Dr. Gulla breaks each treatment option down for me on a basic scientific level so that I can understand what is happening to my body and exactly how we are trying to repair it. She always spends as much time with me as it takes to address all of my concerns and answer my questions, and she considers all aspects of my experience to be important and valuable. She believes me when I talk about my many strange and varied symptoms, and has a wide-ranging toolbox of supplements, herbs, and simple suggestions to help me deal with what is happening to my body. Dr. Gulla demonstrates how much she truly cares about me and how committed she is to helping me improve my health at every appointment, and I am deeply grateful to have her as my doctor.” <br> - A.S. Seattle, WA 2014</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“My name is Marc, and I've been a patient of Dr. Mandy Gulla's for three years. During this time Dr. Gulla has almost singlehandedly restored my faith in a medical profession that had let me down for years. As a physician, Dr. Gulla is the whole package - knowledgeable, kind, caring, thoughtful, intelligent, and up to speed with the latest medical advancements. She offers more of her time than any doctor I've ever seen, so you'll never feel as though you don't have time to ask your important questions. Additionally, Dr. Gulla looks at the whole person…from the physical, to the mental, emotional, and spiritual. Regardless of what ails you, how can you ever expect to feel well if your head isn't in the right place? Dr. Gulla addresses your physical complaints as well as your thoughts, feelings, and actions. I credit Dr. Gulla with saving and enhancing my quality of life. With many of our ailments, we search high and low for the best integrative doctors, open-minded to methods outside mainstream medicine. Dr. Gulla, simply put, is the very best you can do in this regard. I'd say Dr. Gulla goes the extra mile, but by now, she's circled the globe with me. If you want a physician who truly cares about you and your well being, is flexible, open-minded, and willing to work with you to optimize your health, if you truly hope to establish a relationship with your doctor, Dr. Gulla isn't a choice, she is THE choice. I recommend Dr. Gulla for all of your medical needs without hesitation.” <br> - M.R. Tampa, FL 2013</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“I have been a patient of Dr. Gulla's for a little over a year. I started seeing her as a result of being diagnosed with a chronic health condition. I was seeking a holistic approach. I have been more than thrilled with the level of care I have received as a patient. Dr. Gulla has gone above and beyond my expectations in finding a health care provider. She is competent, capable, kind, caring, supportive and incredibly knowledgeable. I don't know of a medical topic that she has not thoroughly researched! Dr. Gulla has great follow up and follow through. She is timely in her care. She is wonderful to talk to about health concerns. She is trustworthy and respectful. Her demeanor makes me feel that she is genuine and desires for me to be healthy. I have recommended colleagues, family and friends to Dr. Gulla. She is amazing and any one under her care is in the best care.” <br> - H.H. Bothell, WA 2013</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“To whom it may concern: Dr Gulla saw me about a year ago in 2012. I had a few years of intestinal issues and continued ongoing intestinal pain. She performed many tests fecal and blood tests. I was put on a one month protocol of various drugs to remove the parasites and worms I had contracted in Mexico. She continued to care for my health and visited me once in the hospital over the summer while my Appendix was removed. She has gone above and beyond in patient healthcare. She is very good at listening to your health issues and coming up with a protocol and health plan that is custom for each patient. We have continued to work on my health issues. Thank you so much Dr Gulla!” <br> - S.S. Bothell, WA 2013</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Dr. Gulla has been such a blessing to me on my journey to healing from Lyme Disease. To start, she ordered the appropriate tests to get the correct diagnosis following a false negative diagnosis from my primary care physician. Her naturally peaceful presence helped me to find peace after being so distraught knowing what lied ahead for me. Throughout this journey, she has been the one Practitioner out of many who has been able to explain everything in the greatest detail such as why and how my current treatment plans would or would not serve me such as herbs, natural foods, aromatherapy, Chinese medicine, antibiotics, and exercise. Her knowledge of all these subjects and her dedication to her patients is unsurpassed. When talking with her, I feel like I am getting care from my best friend or family member. You will truly feel her compassion. I am deeply touched by her sincerity and commitment to see me get well. I would highly recommend Dr. Gulla without reservation.” <br> - J.K. Orlando, FL 2012</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“I love my new Naturopathic Doctor!!! Dr. Mandy Gulla at Living Medical Arts PLLC in Bothell, WA. If you are looking for a new doctor in the Seattle area, you would be a fool not to call and make an appointment with her.” <br> - J.B. Bothell, WA 2012</p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Mandy Gulla is an amazing naturopath and has much to give to the world! I have never met someone more earnest, more caring and more authentic in her caring. She gives you all the time in the world. She works hard to help you to feel safe. She is gentle in her approach but do not let that fool you as she is very, very knowledgeable and skilled. She is very versed in different ways of helping you to heal, and will not stop until she figures out what is best for you. She is modest and softly spoken and would be a perfect fit for those that are vulnerable emotionally and health wise. When she worked in Orlando, she was very, very loved by the staff and patients and EVERYONE was very sad when she left. If you are looking for the kindest, warmest person to help you on your road to recovery then look no further, you have found her here!” <br> - Janice Robinson, Orlando FL 2012 <br> <a href="http://www.orlandoreflexology.com/">OrlandoReflexology</a></p></div>
+      <div class="gallery-cell"><p class="gallery-text">“Dr. Mandy Gulla is a healthcare professional who truly CARES about the health and well being of her patients. She listens attentively and monitors their progress. She treats her patients as valued individuals, tailoring their treatment plan to their specific symptoms, needs and diagnosis. In my case, she incorporated findings from standard medical practice with naturopathic medicine to arrive at the best treatment plan for me. The depth of her expertise coupled with her ability to analyze test data and symptoms have been invaluable on my road to recovery. Dr. Gulla's dietary, lab and lifestyle recommendations have helped me immensely in coping with autoimmune disease, digestive issues and severe food allergies. My son referred me to Dr. Gulla. He has been her patient for 2 years. Currently he is the healthiest he's been in 10 years, largely thanks to Dr. Gulla. Our entire family is extremely grateful to this gifted, caring doctor. We highly recommend her to anyone looking for excellent, naturopathic healthcare.” <br> - S.R. Orlando, FL 2012</p></div>
     </div>
   </div>
-  <div class="container-xl services-cont">
+  <div id="services" class="container-xl services-cont">
     <h2>Expertise and Services</h2>
     <div class="services">
       <img class="services-img" data-bs-toggle="modal" data-bs-target="#commonConditionsModal" src="./images/Common-Conditions.png" alt="Common Conditions">
-      <img class="services-img" src="./images/placeholder.png" alt="">
-      <img class="services-img" src="./images/placeholder.png" alt="">
-      <img class="services-img" src="./images/placeholder.png" alt="">
-      <img class="services-img" src="./images/placeholder.png" alt="">
-      <img class="services-img" src="./images/placeholder.png" alt="">
-      <img class="services-img" src="./images/placeholder.png" alt="">
-      <img class="services-img" src="./images/placeholder.png" alt="">
+      <img class="services-img" data-bs-toggle="modal" data-bs-target="#physicalMedicineModal" src="./images/Physical-Medicine.png" alt="">
+      <img class="services-img" data-bs-toggle="modal" data-bs-target="#treatmentModalitiesModal" src="./images/Treatment-Modalities.png" alt="">
+      <img class="services-img" data-bs-toggle="modal" data-bs-target="#covid-19-testing-Modal" src="./images/Covid-19-Testing.png" alt="">
     </div>
     <!-- Modals -->
     
@@ -102,6 +98,7 @@
             <p>Living Medical arts will treat you as a whole person. Combining individual constitutions and functional medicine we can address concerns creatively. Dr. Gulla enjoys helping resolve common complaints, and work with complex cases toward optimal health.</p>
             <img class="modal-img" src="./images/red-flower.jpg" alt="red flower">
             <ul>
+              
               <li>Acne and Other Skin Conditions</li>
               <li>Allergies and Sensitivities</li>
               <li>Chronic Fatigue/Fibromyalgia</li>
@@ -125,8 +122,92 @@
         </div>
       </div>
     </div>
+    <div class="modal fade" id="physicalMedicineModal" tabindex="-1" aria-labelledby="physicalMedicineModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="physicalMedicineModalLabel">Physical Medicine</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Dr. Bastyr is famous for saying that if he could choose only one instrument of healing he would choose his hands. Dr. Gulla is a licensed massage therapist who has witnessed the profound healing that physical medicine can bring.<br> Physical medicine techniques offered at Living Medical Arts: </p>
+            <img class="modal-img" src="./images/sunflower.jpg" alt="sunflower">
+            <ul>
+              <li>Naturopathic Osseous Manipulation</li>
+              <li>Warm Bamboo Massage Therapy</li>
+              <li>Cranio-sacral Therapy</li>
+              <li>Esoteric Healing</li>
+              <li>Injection Therapies</li>
+              <li>Massage Therapy</li>
+              <li>Reiki</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="treatmentModalitiesModal" tabindex="-1" aria-labelledby="treatmentModalitiesModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="treatmentModalitiesModalLabel">Treatment Modalities</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Living Medical Arts offers a multi-system approach to most health concerns. If we uncover the underlying cause, then there are many answers to any given issue. We will come to the treatment plan that is most practical, meaningful and effective for you. Below are some of the modalities utilized:</p>
+            <img class="modal-img" src="./images/orange-flower.jpg" alt="orange flower">
+            <ul>
+              <li>Botanical Medicine</li>
+              <li>Counseling</li>
+              <li>Exercise Coaching and Education</li>
+              <li>Homeopathy</li>
+              <li>Hydrotherapy</li>
+              <li>IV Nutrient/ Chelation Therapy</li>
+              <li>Injection Therapies</li>
+              <li>Lifestyle Modifications</li>
+              <li>Orthomolecular Medicine</li>
+              <li>Neuro-Repatterning</li>
+              <li>Physical Medicine</li>
+              <li>Prescriptive Medicine</li>
+              <li>Whole Foods Nutrition and Cooking</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="covid-19-testing-Modal" tabindex="-1" aria-labelledby="covid-19-testing-ModalLabel" aria-hidden="true">
+      <div class="modal-dialog" id="covid">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="covid-19-testing-ModalLabel">Covid-19 Testing</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" id="covid-modal">
+            <img class="modal-img covid-img" src="./images/covid.jpg" alt="Covid-19">
+            <p>Living Medical Arts offers a multi-system approach to most health concerns. If we uncover the underlying cause, then there are many answers to any given issue. We will come to the treatment plan that is most practical, meaningful and effective for you. Below are some of the modalities utilized:</p>
+            <p>Thank your for your interest in our Covid testing services at Living Medical Arts PLLC. As a primary care clinic, we can only provide this service to current patients. If you are interested in entering our care, please review and complete the standard patient intake forms on our website: <a href="https://intakeq.com/new/qoetd1">https://intakeq.com/new/qoetd1</a></p>
+            <p><span class="bold">Types of Testing:</span> We offer both in-person swabs and At-Home-Test-Kits. We strongly encourage patients to take advantage of the At-Home-Test-Kit option to reduce community exposure, although in-person testing may be appropriate in some cases, such as for minors. The cost of each test kit is $125 or $180, depending on which lab we use. Typically the lab can bill your insurance: our fee for the service of requisitioning, processing, and tracking each kit is $120.</p>
+            <p>For At-Home-Testing, test-kits will be shipped overnight to your address. Once the kit is received, the swab is self-administered and shipped overnight to the lab via Post San Juan or your nearest FedEx shipping service. It is the patient's responsibility to know the shipping time cut off for their nearest FedEx distributor. We will call patients within one business day once the results are available and will provide counseling.</p>
+            <p>In-Person testing is offered only on Tuesdays, 8:00 - 8:30, behind our office on 640 Mullis St. We do not offer testing ‘in office' since we would have to close our office for two weeks if we received a positive test result within our walls. We will perform swabbing, sample handling, and shipping. We will also call patients within one business day once results are available and will provide counseling. We have limited spaces available, so an appointment is needed</p>
+            <p><span class="bold">Results Time: RESULTS ARE TIMED FROM WHEN THE LAB RECEIVED THE SPECIMEN.</span> Typical LabCorp turn-around times are now 48-72 hours. Patients are strongly encouraged to register an account with LabCorp at <a href="https://www.labcorp.com/patients/results">https://www.labcorp.com/patients/results</a> so they can access their At-Home and LMA test results online. We cannot guarantee that your results will be received in time for your desired travel plans.</p>
+            <p>We also use NW Pathology, which has been resulting in 24-48 hours, and the specimen must be FedExed overnight. Patients have the option to take their specimen to the Bellingham lab location for faster results turn-around.</p>
+            <p><span class="bold">For New Patients: <em>fully completed forms, payment in full, and insurance card are required the Monday before (9 days) prior to ordering/scheduling/swabbing.</em></span> We require everything on the Financial Policy, Consent for Care, HIPAA, and Client History Form - Covid 19 Screening Only be filled out, and if something doesn't apply to you, simply write ‘N/A'. Forms must be submitted to our office in paper or PDF form (no photos please) along with your insurance card copy (front and back) and check. You may drop the forms at our office or mail them: Living Medical Arts, PLLC, 640 Mullis Street, Suite 102C, Friday Harbor WA 98250.</p>
+            <p><span class="bold">Alternatives:</span> LabCorp provides an At-Home-Testing option called Pixel, which provides telehealth physician counseling services and is similar to our At-Home-Testing-Kit option. To learn more, visit <a href="https://www.ondemand.labcorp.com/">https://www.ondemand.labcorp.com/</a></p>
+            <p>Please let us know if you have further questions - we're happy to help! 360.472.0447.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="container-xxl contact-us">
+  <div id="contact-us" class="container-xxl contact-us">
     <h2>Contact Us</h2>
     <div class="contact-top">
       <img class="contact-pic" src="./images/placeholder.png" alt="">
@@ -145,7 +226,8 @@
       <p class="bt">NOTE: If you need to refill a prescription, please contact your pharmacy and they will send an electronic request to us for refill.</p>
     </div>
     <div class="contact-bot">
-      <button>New Patient Intake Form</button>
+      <button class="intake"><a href="https://intakeq.com/new/qoetd1">New Patient Intake Form</a></button>
+      <button class="to-top" onClick="document.getElementById('home').scrollIntoView();">^</button>
     </div>
   </div>
   <div class="footer">
@@ -158,8 +240,9 @@
     </div>
     <div class="footer-right">
       <p>Please follow us:</p>
-      <i class="bi bi-facebook"></i>
-      <i class="bi bi-instagram"></i>
+      <a href="https://www.facebook.com/LivingMedicalArts"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/LivingMedicalArts/"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.instagram.com/drgulla/"><i class="bi bi-instagram"></i></a>
     </div>
   </div>
 <script src="./flickity.pkgd.min.js"></script>
