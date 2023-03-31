@@ -31,7 +31,7 @@
         <p class="splash-cont">and Licensed Massage Therapist</p>
         <p class="splash-cont">Located in Friday Harbor, WA</p>
       </div>
-      <button id="book" class="book splash-cont">Book your appointment today!</button>
+      <button id="book" class="book splash-cont" onClick="document.getElementById('contact-us').scrollIntoView();">Book your appointment today!</button>
     </div>
   </div>
   <div id="about-us" class="container-xxl about-us">
@@ -57,6 +57,7 @@
   </div>
   <div id="testimonials" class="container-xxl testimonials">
     <h2>Testimonials</h2>
+    <!-- uses flickity's carousel! -->
     <div class="main-gallery js-flickity" 
     data-flickity-options='{"wrapAround": true, "autoPlay": true}'>
       <div class="gallery-cell"><p class="gallery-text">“To Dr. Gulla, Living well Medical Arts. I would like to thank you personally for your excellent ways of nurturing body and mind. Your knowledge of the body and also your spiritual insight give you a unique healing way. Since I've stared with your practice, I've changed my diet and my attitude, and at 63 yrs, am feeling good. My last visit to you was unscheduled, but I was welcomed quickly and you went to work! I had chest pains I couldn”t account for. You took the precautions of a possible heart issue, and we went over that extensively. While I was there, you preformed some body work on muscular and skeletal possibilities, and prescribed herbal medicines to make the pain diminish. The tests bore no heart problems, and you followed up the results with the suggestion of some more adjustments, so I could regain 100% pain free mobility. You are a caring person as well as a practiced Dr. I'm lucky to have entered your caring team! Thank you kindly, Dr. Gulla, Keep up the good work!” <br> - Friday Harbor WA, 2018</p></div>
@@ -80,6 +81,7 @@
   <div id="services" class="container-xl services-cont">
     <h2>Expertise and Services</h2>
     <div class="services">
+      <!-- uses bootstrap's modal code! -->
       <img class="services-img" data-bs-toggle="modal" data-bs-target="#commonConditionsModal" src="./images/Common-Conditions.png" alt="Common Conditions">
       <img class="services-img" data-bs-toggle="modal" data-bs-target="#physicalMedicineModal" src="./images/Physical-Medicine.png" alt="">
       <img class="services-img" data-bs-toggle="modal" data-bs-target="#treatmentModalitiesModal" src="./images/Treatment-Modalities.png" alt="">
@@ -98,7 +100,6 @@
             <p>Living Medical arts will treat you as a whole person. Combining individual constitutions and functional medicine we can address concerns creatively. Dr. Gulla enjoys helping resolve common complaints, and work with complex cases toward optimal health.</p>
             <img class="modal-img" src="./images/red-flower.jpg" alt="red flower">
             <ul>
-              
               <li>Acne and Other Skin Conditions</li>
               <li>Allergies and Sensitivities</li>
               <li>Chronic Fatigue/Fibromyalgia</li>
