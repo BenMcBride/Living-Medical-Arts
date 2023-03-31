@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -93,6 +93,7 @@ button:hover {
 
 .nav-links button {
   padding: 1px 6px;
+  margin-left: 10px;
 }
 
 #home {
