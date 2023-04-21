@@ -46,6 +46,27 @@ button:hover {
   color: white;
 }
 
+.logo a {
+  text-decoration: none;
+}
+
+.logo-lg {
+  background: -webkit-linear-gradient(45deg, #18411b, #019423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 2rem;
+  text-shadow: 0 0 20px #fff;
+}
+
+.logo-sm {
+  background: -webkit-linear-gradient(45deg, #18411b, #019423);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.4rem;
+  text-shadow: 0 0 10px #fff, 0 0 20px;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -75,9 +96,8 @@ button:hover {
   justify-content: space-between;
   align-content: center;
   width: 100%;
-  padding: 5px 20%;
-  background-color: whitesmoke;
-  border-bottom: 3px solid grey;
+  padding: 5px 10%;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .logo {
@@ -94,14 +114,6 @@ button:hover {
 .nav-links button {
   padding: 1px 6px;
   margin-left: 10px;
-}
-
-#home {
-  scroll-margin-top: 70px;
-}
-
-.home {
-  margin-top: 73px;
 }
 
 .splash {
@@ -128,18 +140,17 @@ button:hover {
 .splash-cont {
   position: relative;
   padding-bottom: 5px;
-  width: -moz-fit-content;
   width: fit-content;
+}
+
+.splash-box p {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
 }
 
 .splash-box {
   padding: 5px 15px;
   position: relative;
-  background-image: url(images/Blur3grn.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  width: -moz-fit-content;
+  text-shadow: 0 0 30px #fff, 0 0 40px #fff;
   width: fit-content;
 }
 
@@ -545,4 +556,6 @@ button:hover {
     float: none;
     transition: 200ms ease-in-out;
   }
-}/*# sourceMappingURL=input.css.map */
+}
+
+/*# sourceMappingURL=input.css.map */
